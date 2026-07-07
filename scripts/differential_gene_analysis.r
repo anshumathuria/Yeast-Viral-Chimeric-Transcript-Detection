@@ -108,18 +108,6 @@ dds <- DESeq(dds)
 
 vsd <- vst(dds, blind = FALSE)
 
-# =====================================================
-# PCA PLOT
-# =====================================================
-
-pdf("PCA_plot.pdf", width = 8, height = 6)
-
-plotPCA(
-  vsd,
-  intgroup = "Condition"
-)
-
-dev.off()
 
 # =====================================================
 # DAY 4 COMPARISON
